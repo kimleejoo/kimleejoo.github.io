@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>login</title>
+		<meta name="description" content="">
+		<meta name="author" content="hu">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+		}
+		    body{
+		    	background: url("img/login_img.jpg");
+		    	background-repeat:no-repeat;
+		    	/*background-size:cover;*/
+		    	background-position:center;
+		    	
+		    }
+			#login_box{
+				width: 500px;
+				height:500px;
+				margin: 0 auto;
+	            background-color:rgba(255,255,255,0.8);
+	            margin-top: 150px;
+	            border-radius: 20px 20px 20px 20px;
+			}
+			.logo{
+				text-align: center;
+				padding-top: 20px;
+			}
+			.login{
+				margin-top: 30px;
+			}
+			.login input{
+				display: block;
+				margin: 0 auto;
+				width: 300px;
+				height: 40px;
+				margin-top: 10px;
+			}
+			.login button{
+				display: block;
+				margin: 0 auto;
+				width: 300px;
+				height: 40px;
+				margin-top: 10px;
+			}
+			.login p{
+				padding-left: 99px;
+				padding-top: 10px;
+			}
+			#a{
+				text-align:center;
+			}
+			#a a{
+				margin: 10px;
+				color:#000000;
+				font-weight: bold;
+			}
+			#a a:hover{
+				color:#77AAAD;
+			}
+		</style>
+	</head>
+
+	<body>
+<div id="login_box">
+	<div class="logo">
+		<h1>BORACAY</h1>
+	</div>
+	<div class="login">
+		<input type="text" placeholder="ID"/>
+		<input type="text" placeholder="PASSWORD"/>
+		<button>로그인</button>
+		<p><i class="far fa-check-circle"></i>로그인상태유지</p>
+		<br />
+		<br />
+		<br />
+		<hr>
+		<br />
+		<div id="a">
+		<a href="#">아이디찾기</a>
+		<a href="#">비밀번호찾기</a>
+		<a href="#">회원가입</a>
+		</div>
+	</div>
+</div>
+	</body>
+</html>

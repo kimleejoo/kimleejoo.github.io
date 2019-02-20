@@ -1,0 +1,307 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Major Mono Display', monospace;
+	font-family: 'Raleway', sans-serif;
+	font-family: }
+
+	/*********************section1*********************/
+
+	.clearfix{
+	*zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+	display: block;
+	content: "";
+	line-height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+
+#nav {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+#nav > ul:hover {
+	color: #fff;
+}
+#nav .nav li a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+#nav img {
+	margin-left: 40px;
+}
+#nav .nav {
+	float: right;
+	margin-top: 20px;
+	margin-right: 40px;
+}
+#nav .nav li {
+	display: inline-block;
+}
+#nav .nav li a {
+	display: block;
+	font-size: 18px;
+	color: black;
+	padding: 17px 20px 20px 20px;
+	font-weight: bold;
+}
+
+#contents > .box {
+	height: 100vh;
+}
+
+.section1_box {
+	width: 900px;
+	height: 500px;
+	position: relative;
+	top: 50%;
+	border: 5px solid gray;
+	text-align: left;
+	margin: 0 auto;
+	transform: translate(0,-50%);
+}
+.section1_box h1 {
+	font-size: 65px;
+	padding-left: 180px;
+	padding-top: 160px;
+}
+.rose1 {
+	position: absolute;
+	top: -53px;
+	left: -95px;
+}
+.image1 {
+	position: absolute;
+	top: 73px;
+	right: -95px;
+}
+.image2 {
+	position: absolute;
+	top: 315px;
+	left: 0px;
+}
+.dots li a.active:before {
+	background-color: black;
+}
+.dots li a:before {
+	background-color: black;
+}
+.icon {
+	text-align: center;
+	margin-top: 90px;
+}
+
+/*********************section2*********************/
+
+#section2_box {
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.porofile_right {
+	width: 75%;
+	height: 250px;
+	float: right;
+	margin-top: 40px;
+}
+.span {
+	margin-top: 20px;
+}
+.span span {
+	font-weight: bold;
+}
+
+.right {
+	float: left;
+	width: 40%;
+	height: 120px;
+}
+.right img {
+	width: 100px;
+	float: left;
+}
+.right span {
+	font-size: 20px;
+}
+.right p {
+
+}
+.porofile_img {
+	float: left;
+	margin-top: 40px;
+}
+.porofile_bottom1 {
+
+	display: inline-block;
+	padding-left: 250px;
+}
+.porofile_bottom2 {
+
+	display: inline-block;
+	padding-left: 250px;
+}
+.Circle {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 130px;
+	margin: 10px;
+	background-color: #fff;
+	box-shadow: 5px 5px 5px 5px gray;
+}
+.Circle p {
+	font-weight: bold;
+}
+
+/*********************section3*********************/
+
+.portfolio_border {
+
+	margin: 0 auto;
+}
+
+.portfolio {
+	float: left;
+	margin: 15px;
+}
+.text {
+	display: inline-block;
+}
+#portfolio_box {
+	width: 1300px;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.footer {
+	margin-top: 620px;
+	text-align: center;
+}
+.portfolio2 img:hover {
+
+}
+.portfolio {
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(255,255,255,0.8);
+}
+.portfolio:hover .overlay {
+	opacity: 1;
+}
+.portfolio:hover .middle {
+	opacity: 1;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+.text {
+
+}
+.middle_text {
+	background-color: green;
+	width: 80px;
+	height: 30px;
+}
+.middle_text a {
+	line-height: 30px;
+	color: #fff;
+}
+
+/*********************section4*********************/
+
+.contect1 {
+	width: 400px;
+	height: 500px;
+	background-color: rgba(255,255,255,0.8);
+	float: left;
+	border-radius: 15px 15px 15px 15px;
+}
+.contect2 {
+	width: 400px;
+	height: 500px;
+	background-color: rgba(158, 158, 158, 0.8);
+	float: right;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.section4_box {
+	width: 900px;
+	height: 600px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.contect1 span {
+	font-size: 20px;
+}
+.contect1 h1 {
+	margin: 30px;
+}
+.info {
+	margin: 30px;
+}
+.info h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.info span {
+	font-weight: bold;
+	margin-top: 20px;
+}
+.info p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.contect2 h1 {
+	margin: 30px;
+}
+.send {
+	margin: 30px;
+	text-align: center;
+}
+.contact_box input {
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+}
+.contact_box textarea {
+	width: 300px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.btn input {
+	margin-top: 20px;
+	width: 300px;
+	height: 50px;
+	border-radius: 12px 12px 12px 12px;
+}
+

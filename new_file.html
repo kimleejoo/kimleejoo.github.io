@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title> jQuery </title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css">
+		<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+
+		<!-- 스타일 -->
+		<style type="text/css">
+		body { background:#000; }
+		.home { background:#fff; color:#000; }
+
+		.light02 { position:absolute; top:0; left:73px; width:68px; height:130px; }
+		.light03 { position:absolute; top:0; left:158px; width:68px; height:130px; }
+		</style>
+		<!-- // 스타일 -->
+
+	</head>
+	<body>
+
+		<a href="../index.html" class="home">Home</a>
+		<div class="light01"></div>
+		<div class="light02"></div>
+		<div class="light03"></div>
+
+		<!-- 스크립트 -->
+		<script type="text/javascript" src="../common/js/jquery.jsmovie.js"></script>
+		<script type="text/javascript">
+		$('.light01').jsMovie({
+			sequence: '##.png',
+			from: 1,
+			to: 17,
+			width: 46,
+			height: 140,
+			folder : "img/jsmovie/light1/",
+			fps: 5,
+			endPoint: 16
+		});
+		$('.light01').jsMovie('play');
+
+		$('.light02').jsMovie({
+			sequence: '##.png',
+			from: 1,
+			to: 16,
+			width: 68,
+			height: 130,
+			folder : "img/jsmovie/light2/",
+			fps: 5,
+			endPoint: 15
+		});
+		$('.light02').jsMovie('play');
+
+		function lightAni2(){ // 1번 줄
+			$(".light02").animate({top:"0"},3000).delay(3000).animate({top:"-50px"},3000);
+			var lineAuto=setTimeout(lightAni2, 900);
+		}
+		var lineAuto=setTimeout(lightAni2, 300);
+
+		$('.light03').jsMovie({
+			sequence: '##.png',
+			from: 1,
+			to: 21,
+			width: 51,
+			height: 145,
+			folder : "img/jsmovie/light3/",
+			fps: 3,
+			endPoint: 20
+		});
+		$('.light03').jsMovie('play');
+		</script>
+		<!-- // 스크립트 -->
+
+	</body>
+</html>

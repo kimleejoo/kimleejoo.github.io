@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+#header {
+	height: 800px;
+	background: url("img/background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#logo {
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+#logo h1 {
+	font-size: 50px;
+}
+.menu {
+	display: inline-block;
+	margin-top: 70px;
+	float: right;
+	margin-right: 40px;
+}
+.menu > ul > li {
+	float: left;
+}
+.menu > ul > li:hover > ul {
+	display: block;
+}
+.menu > ul > li > a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.menu > ul > li > ul {
+	position: absolute;
+	display: none;
+	padding-left: 35px;
+	padding-top: 10px;
+}
+.menu > ul > li > ul > li > a {
+	color: black;
+	font-weight: bold;
+	font-size: 17px;
+}
+.menu > ul > li > ul > li > a:hover {
+	border-bottom: 1px solid black;
+}
+.menu > ul > li > a {
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 30px;
+}
+#main_text {
+	width: 50%;
+	float: right;
+	margin-top: 200px;
+}
+#main_text h1 {
+	font-size: 70px;
+}
+#main_text h2 {
+	font-size: 60px;
+}
+#main_text h3 {
+	font-size: 30px;
+}
+#main_text p {
+	margin-top: 30px;
+	font-size: 15px;
+}
+.login_box {
+	border: 2px solid #fff;
+	display: inline-block;
+	width: 230px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: rgba(255,255,255,0.3);
+	text-align: center;
+	line-height: 40px;
+}
+.login_box:hover {
+	background-color: rgba(255,255,255,0.6);
+	transition: 0.8s;
+}
+.login_box a:hover{
+	color: #fff;
+	font-weight: bold;
+}
+.login_box a {
+	display: block;
+	height: 100%;
+	color: #fff;
+}
+#scroll {
+	text-align: center;
+	margin-top: 50px;
+}
+#aside {
+	display: inline-block;
+	position: relative;
+	top: 200px;
+}
+#aside img {
+	width: 780px;
+}
+.sticky * {
+	margin: 0;
+	padding: 0;
+}
+.sticky {
+	position: fixed;
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0;
+	z-index: 10;
+	text-align: right;
+}
+.sticky ul li {
+	float: left;
+}
+.sticky ul li a {
+	margin-right: 10px;
+	padding: 5px 0;
+	display: block;
+}
+.sticky .last {
+	margin-left: -150px;
+}
+.sticky ul li:hover {
+	color: #fff;
+	z-index: 1000px;
+}
+.sticky ul {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+/*****************************/
+
+#boracay {
+	height: 450px;
+	background-color: #77AAAD;
+}
+.left {
+	float: left;
+	width: 20%;
+	overflow: hidden;
+	margin-top: 110px;
+	margin-right: 20px;
+	text-align: right;
+}
+.left h1 {
+	font-size: 30px;
+}
+.right {
+	width: 75%;
+	overflow: hidden;
+	padding-top: 100px;
+}
+.right p {
+	margin: 15px;
+}
+.right span {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.button {
+	font-weight: bold;
+	display: inline-block;
+}
+.button p {
+	color: black;
+}
+.bottom img {
+	width: 400px;
+	height: 250px;
+}
+
+.bottom {
+	width: 400px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 50px;
+	padding: 5px;
+}
+.top {
+	height: 50px;
+	float: left;
+	width: 20%;
+	margin-top: 50px;
+}
+.top h1 {
+	font-size: 30px;
+	text-align: right;
+	margin-right: 10px;
+}
+#offers {
+	height: 400px;
+	background-color: #E0E3DA;
+}
+#footer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

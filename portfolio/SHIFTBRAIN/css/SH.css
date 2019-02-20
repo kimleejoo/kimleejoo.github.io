@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은 고딕";
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+body{
+    min-width: 960px;
+}
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: block;
+}
+.clearfix:after{
+    clear:both;
+}
+
+
+/* --------------slideshow-------------- */
+.slideshow{
+    min-width: 960px;
+    height: 465px;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+ }/*나중에 제이쿼리에서 fadein fadeout으로 처리하려규 이미지는 걍 없앰*/
+
+
+/*--------------page-header---------------*/
+.page-header{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    min-width: 960px;
+    z-index: 30;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+.page-header.sticky{ /* 스크롤 시 고정 헤더 */
+    position: fixed;
+    top: 0;
+}
+.page-header>.inner{
+    margin: 0 auto;
+    width: 960px;
+}c
+
+
+/*--------------logo---------------*/
+.site-logo{
+    float: left;
+    margin-left: -20px;
+}
+
+
+/*------------primary nav---------------*/
+.primary-nav{
+    float: right;
+    line-height: 65px;
+    text-transform: uppercase; /* 전체 대문자 변경*/
+}
+.primary-nav li{
+    float: left;
+}
+.primary-nav a{
+    display: block;
+    padding: 0 18px;
+}
+.primary-nav a:hover{
+    background: rgb(240,240,240);
+}
+
+/*-----------topics section-----------*/
+.topics-section{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+.topics-section>.inner{
+    margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 75px;
+    width: 960px;
+}
+.topics-list li{
+    float: left;
+    width: 304px;
+    margin-left: 10px;
+}
+.topics-list a{
+    display: block;
+}
+.topics-list .image-wrapper{
+    display: inline-block;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+.topics-list .title{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.topics-list .date{
+    color: rgb(128,128,128);
+    display: block;
+    font-size: 12px;
+    margin-bottom: 19px;
+}
+.topics-list .description{
+    color: rgb(77,77,77);
+    font-size: 12px;
+    line-height: 19px;
+}
+
+
+/*---------work section----------*/
+.work-section{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+.work-section .section-header{
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.work-section .section-header>.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+.work-section h2{
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+}
+.work-section .tabs-nav{
+    border-left: 1px solid #ccc;
+    float: right;
+    box-shadow: inset 1px 0 rgb(255,255,255);
+}
+.work-section .tabs-nav li{
+    float: left;
+    border-right: 1px solid #ccc;
+    /* box-shadow: 1px 0 1px #fff; */
+}
+.work-section .tabs-nav a{
+    display: block;
+    padding: 0 19px;
+}
+.work-section .tabs-nav a:hover{
+    background-color: rgb(51,51,51);
+    color: #fff;
+}
+.work-section .section-body{
+    height: 400px;
+    position: relative;
+}
+.work-section .section-body .image-wrapper{
+    height: 100%;
+    min-width: 960px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.work-section .section-body .image-wrapper img{
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+.work-section .section-body .content{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.work-section .section-body .content>.inner{
+    position: absolute;
+    width: 250px;
+}
+.work-section .section-body #work01 .content>.inner{
+    top: 20px;
+    left: 680px;
+}
+.work-section .section-body #work02 .content>.inner{
+    top: 140px;
+    left: 40px;
+}
+.work-section .section-body #work03 .content>.inner{
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work04 .content>.inner{
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work05 .content>.inner{
+    top: 50px;
+    left: 680px;
+}
+.work-section .section-body .title{
+    font-size: 60px;
+    font-weight: normal;
+    color: #fff;
+}
+.work-section .section-body .description{
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+.work-section .section-body .read-more{
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    margin-top: 19px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+/*-----------contact form------------*/
+.contact-form .form-item{
+    margin-top: 8px;
+}
+.contact-form label{
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.contact-form input, .contact-form textarea{
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"]{
+    width: 200px;
+}
+.contact-form textarea{
+    width: 340px;
+    height: 160px;
+}
+.contact-form input[type="submit"]{
+    background: rgb(128,128,128);
+    border: 0;
+    color:#fff;
+    margin-top: 10px;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+/*-------------map-------------*/
+.contact-map{
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+.contact-section{
+    background: #cdcdcd;
+}
+.contact-section>.inner{
+    height: 500px;
+    position: relative;
+    min-width: 960px;
+}
+.contact-section h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+}
+.contact-form-wrapper{
+    width: 352px;
+    padding: 56px 64px 0;
+    position: absolute;
+    left: 50%;
+}
+
+
+/*-----------footer------------*/
+.page-footer>.inner{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+/*------------social links------------*/
+.social-links{
+    float: left;
+}
+.social-links li{
+    float: left;
+    margin-left: 5px;
+}
+.social-links li:first-child{
+    margin-left: 0;
+}
+.social-links a{
+    border: 1px solid rgb(153,153,153);
+    display: block;
+    padding: 6px;
+}
+.social-links .label{
+    display: block;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+}
+.social-links .label:before{
+    content: url('../img/sprites.png');
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+.social-links .item-facebook .label:before{
+    margin-left: -70px;
+}
+.social-links .item-twitter .label:before{
+    margin-left: -90px;
+}
+
+
+/*---------------back-to-top button---------------*/
+.copyright{
+    color: #cdcdcd;
+    font-size: 12px;
+    padding: 6px 0;
+    float: right;
+    text-transform: uppercase;
+}
+
+.back-to-top{
+    background-color: #D5D5D5;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 0;
+}
+.back-to-top .label{
+    display: block;
+    height: 18px;
+    margin: 0 auto;
+    width: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.back-to-top .label img{
+    position: absolute;
+    left: -35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

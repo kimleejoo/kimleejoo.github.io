@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8" />
+<html>
+	<head>
+		<title>Full page scroll</title>
+		<link rel="stylesheet" type="text/css" href="js/full-page-scroll.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="portfolio.css" />
+		<link href="FURNITURE.html" />
+		<link rel="shortcut icon" href="img/logo.png">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Raleway|Shadows+Into+Light" rel="stylesheet">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-migrate-1.4.1.min.js"></script>
+		<style type="text/css">
+			.section1 {
+				background-image: url("img/background-img8.jpg");
+				background-size: cover;
+			}
+
+			.section2 {
+				background-image: url("img/background-img8.jpg");
+				background-size: cover;
+			}
+
+			.section3 {
+				background-image: url("img/background-img8.jpg");
+				background-size: cover;
+			}
+
+			.section4 {
+				background-image: url("img/background-img4.jpg");
+				background-size: cover;
+			}
+			span {
+				font-size: 4em;
+				font-style: normal;
+				color: black;
+			}
+			.dots li {
+				position: relative;
+			}
+			.dots b {
+				float: left;
+				position: absolute;
+				left: -50px;
+				top: 4px;
+				color: black;
+				font-size: 12px;
+				opacity: 0;
+			}
+			.dots li:nth-child(3) b {
+				left: -62px;
+			}
+			.dots .active b {
+				opacity: 1;
+			}
+		</style>
+		<script>
+			$(function() {
+				$(".dots li:first-child a").html("<b>INTRO</b>");
+				$(".dots li:nth-child(2) a").html("<b>PROFILE</b>");
+				$(".dots li:nth-child(3) a").html("<b>PORTFOLIO</b>");
+				$(".dots li:nth-child(4) a").html("<b>CONTACT</b>");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main" class="scroll-container">
+			<section class="section1">
+				<div>
+					<div id="nav" class="clearfix">
+						<img src="img/logo.png" width="65px"/>
+						<ul class="nav">
+							<li>
+								<a id="intro" href="#Section1">INTRO</a>
+							</li>
+							<li>
+								<a id="profile" href="#Section2">PROFILE</a>
+							</li>
+							<li>
+								<a id="portfolio" href="#Section3">PORTFOLIO</a>
+							</li>
+							<li>
+								<a id="contact" href="#Section4">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+					<div id="contents" class="clearfix">
+
+						<div class="section1 box">
+							<div class="section1_box">
+								<h1>Web
+								<br />
+								Publisher&Designer</h1>
+								<img class="rose1" src="img/rose3.png" width="400px">
+								<img class="image1" src="img/image1.png" width="250px"/>
+								<img class="image2" src="img/image2.png" width="400px"/>
+							</div>
+
+							<div class="icon">
+								<img class="icon" src="img/icon.png">
+								<p>
+									scroll
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="section2">
+				<h1># PROFILE</h1>
+				<div id="section2_box">
+
+					<div class="porofile_img">
+						<img src="img/frame-img.png" width="200px"/>
+					</div>
+					<div class="porofile_right">
+						<div class="right">
+							<img src="img/icon2.PNG" />
+							<div class="span">
+								<span>NAME</span>
+								<p>
+									김 이주
+								</p>
+							</div>
+						</div>
+						<div class="right">
+							<img src="img/icon6.png" />
+							<div class="span">
+								<span>Phone</span>
+								<p>
+									010-2426-2064
+								</p>
+							</div>
+						</div>
+						<div class="right">
+							<img src="img/icon3.PNG" />
+							<div class="span">
+								<span>Address</span>
+								<p>
+									충청남도 천안시
+								</p>
+							</div>
+						</div>
+						<div class="right">
+							<img src="img/icon5.png" />
+							<div class="span">
+								<span>B-day</span>
+								<p>
+									1997.04.14
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="porofile_bottom1">
+						<img src="img/icon1.PNG" />
+						<span>HISTORY</span>
+						<span>2019</span>
+						<p>
+							휴먼교육센터 스마트웹&콘텐츠 (웹디자인,웹퍼블리셔)과정 수료 예정
+						</p>
+					</div>
+					<div class="porofile_bottom2">
+						<img src="img/icon4.PNG" />
+						<span>KEYWORD</span>
+						<p>
+							#웹표준 #반응형 #디자인
+						</p>
+
+						<div class="Circle">
+							<p>
+								HTML
+							</p>
+						</div>
+						<div class="Circle">
+							<p>
+								CSS
+							</p>
+						</div>
+						<div class="Circle">
+							<p>
+								Photoshapp
+							</p>
+						</div>
+						<div class="Circle">
+							<p>
+								jQuery
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="section3">
+				<h1># PORTFOLIO</h1>
+				<div id="portfolio_box">
+					<div class="portfolio_border">
+						<div class="portfolio portfolio1">
+							<img src="img/portfolio3.jpg" width="400px" height="230px"/>
+							<div class="overlay">
+								<div class="text">
+									FURNITURE
+									반응형 웹 사이트
+								</div>
+							</div>
+							<div class="middle">
+								<div class="middle_text">
+									<li>
+										<a href="portfolio/FURNITURE/FURNITURE.html">자세히></a>
+									</li>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio portfolio2">
+							<a href="#"> <img src="img/portfolio1.jpg"  width="400px" height="230px"/> </a>
+							<div class="overlay">
+								<div class="text">
+									HIFTBRAIN
+								</div>
+							</div>
+							<div class="middle">
+								<div class="middle_text">
+									<li>
+										<a href="portfolio/SHIFTBRAIN/index.html">자세히></a>
+									</li>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio portfolio3">
+							<img src="img/portfolio2.jpg"  width="400px" height="230px"/>
+							<div class="overlay">
+								<div class="text">
+									Hello World
+								</div>
+							</div>
+							<div class="middle">
+								<div class="middle_text">
+									<li>
+										<a href="portfolio/Boracay/index.html">자세히></a>
+									</li>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section class="section4">
+				<h1># CONTACT</h1>
+				<div class="section4_box">
+					<div class="contect1">
+						<h1>MY INFO</h1>
+						<div class="info">
+							<h2> 웹퍼블리셔 김 이주 </h2>
+							<span>전화번호</span>
+							<p>
+								010-2426-2064
+							</p>
+							<span>이메일</span>
+							<p>
+								leejoo97@naver.com
+							</p>
+							<span>거주지</span>
+							<p>
+								충청남도 천안시
+							</p>
+							<span>카카오톡</span>
+							<p>
+								klj97
+							</p>
+						</div>
+					</div>
+
+					<form action="https://formspree.io/leejoo97@naver.com" method="POST" class="contect2">
+						<h1>SEND</h1>
+						<div class="send">
+							<div class="contact_box">
+								<p>
+									<!-- Name -->
+									<input type="text" placeholder="Name" name="name"/>
+								</p>
+							</div>
+							<div class="contact_box">
+								<p>
+									<!-- email -->
+									<input type="email" placeholder="e-mail" name="_replyto"/>
+								</p>
+							</div>
+							<div class="contact_box">
+								<p>
+									<!-- tell -->
+									<input type="text" placeholder="tell" name="tell"/>
+								</p>
+								<div class="contact_box">
+									<label for="message"> </label>
+									<textarea name="message" id="message"> </textarea>																											
+								
+
+
+
+
+								</div>
+							</div>
+							<div class="btn">
+								<input type="submit" value="SEND">
+
+								</input>
+							</div>
+
+						</div>
+					</form>
+					<div class="footer">
+						<footer>
+							COPYRIGHT ⓒ 2019 by KIM LEE JOO.all rights reserved.
+						</footer>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="js/full-page-scroll.js"></script>
+		<script type="text/javascript">
+			var fs = new fullScroll({
+				displayDots : true,
+				dotsPosition : 'left',
+				animateTime : 0.9,
+				animateFunction : 'ease'
+			});
+
+			$(function() {
+
+				$("#profile").click(function(e) {
+					e.preventDefault();
+					fs.changeCurrentPosition(1);
+				});
+				$("#portfolio").click(function(e) {
+					e.preventDefault();
+					fs.changeCurrentPosition(2);
+				});
+				$("#contact").click(function(e) {
+					e.preventDefault();
+					fs.changeCurrentPosition(3);
+				});
+			});
+		</script>
+	</body>
+</html>
